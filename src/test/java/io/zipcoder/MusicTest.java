@@ -10,10 +10,10 @@ public class MusicTest {
 
         String[] playlist = {"wheniseeyouagain","borntorun","nothingelsematters","cecelia"};
         Music music = new Music(playlist);
-        Integer startingIndex = 1;
+        Integer startIndex = 1;
         String selection = "cecelia";
         Integer expected = 2;
-        Integer actual = music.selection(startingIndex, selection);
+        Integer actual = music.selection(startIndex, selection);
         Assert.assertEquals(expected, actual);
     }
 
